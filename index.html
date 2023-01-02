@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Autosalon</title>
+</head>
+<body>
+  <section class="container">
+
+  <section id="znacka">
+  <form>
+    <label for="cars">Vyber auto dle svých preferencí:</label>
+    <select id="cars" name="cars">
+      <option id="mercedes" value="1500000">Mercedes cena: 1 500 000 CZK</option>
+      <option id="volo" value="1200000"> Volvo cena: 1 200 000 CZK      </option>
+      <option id="audi" value="1350000">Audi cena: 1 350 000 CZK</option>
+      <option id="bmw" value="1400000">BMW cena: 1 400 00CZK</option>     
+    </select>
+    
+  </form>  
+</section>
+<br>
+
+<section id="color">
+<form>
+  <input type="radio" class="barva" id="barva" name="barva" value="0">
+  <label for="barva"> základní barva (bez příplatku) </label><br>
+  <input type="radio" class="barva" id="lak" name="barva" value="5">
+  <label for="lak"> pálený lak (s příplatkem 5% ze základní ceny vozu)  </label><br>
+  <input type="radio" class="barva" id="metaliza" name="barva" value="7">
+  <label for="metaliza"> metalická barvy (s příplatkem 7% ze základní ceny vozu)</label><br><br>
+ 
+</form>
+</section>
+<br>
+
+<section id="extra">
+  <form>
+    <input type="checkbox" class="pridavek" id="kamera" name="kamera" value="10000">
+    <label for="vehicle1"> Parkovací kamery (+10 000 Kč)    </label><br>
+    <input type="checkbox" class="pridavek" id="kola" name="kola" value="20000">
+    <label for="vehicle2">Litá kola (+20 000 Kč)    </label><br>
+    <input type="checkbox" class="pridavek" id="sedačky" name="sedačky" value="50000">
+    <label for="vehicle3"> Kožené sedačky (+ 50 000 Kč)    </label><br>
+    <input type="checkbox" class="pridavek" id="tuning" name="tuning" value="20">
+    <label for="vehicle3"> Tuningová úprava (+20 % ze základní ceny vozu)
+    </label><br>
+  
+  </form>
+  </section>
+  <br><br>
+ 
+
+  <section id="castkaZak">
+  
+    <div class="price"> <label for="price">Zadejte cenu, kterou jste ochotni zaplatit: </label>
+     <input type="text" id="priceZakaznik" name="price" required maxlength="20" size="20">
+     <input type="button" id="update" value="Spočítej cenu">
+        <p>Resumé: <span id="zprava-zakaznikovi"></span></p>
+        
+   </div> 
+   </section> <br><br>
+
+  <section id="kontakt">
+    <div class="email"><label for="email">Zadejte email</label>
+    <input type="email" id="email" name="email" required maxlength="40" size="40" placeholder="Zadejte emailovou adresu">
+ <button name="submit" id="submit" onclick="odesli()"> Odeslat </button>
+</div>
+    
+   </section>
+   
+
+  
+
+  </section>
+<script src="script1.js"></script>
+</body>
+</html>
